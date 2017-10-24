@@ -7,7 +7,7 @@ a helper library for MyBatis
 
 ## Usage
 ```groovy
-import package net.devgoodies.query.*
+import net.devgoodies.query.*
 
 ExpandoInstaller.instance.install()
 
@@ -17,7 +17,7 @@ sortConditionArray.toOrderByString()
 ```
 
 ```groovy
-import package net.devgoodies.query.*
+import net.devgoodies.query.*
 
 def builder = new WhereConditionBuilder()
 builder.whereEquals('name', 'foo')
