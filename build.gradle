@@ -1,0 +1,26 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.12'
+
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+}
+
+
+def repo = new File(rootDir, "repository")
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository url: "file://${repo.absolutePath}"
+            pom.version = '1.0.0'
+            pom.groupId = 'net.devgoodies'
+            pom.artifactId = 'mybuddy'
+        }
+    }
+}
