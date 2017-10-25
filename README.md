@@ -43,6 +43,6 @@ repositories {
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.12'
-    compile 'net.devgoodies:mybuddy:1.0.0'
+    compile 'net.devgoodies:mybuddy:1.0.1'
 }
 ```
